@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>てすと</title>
+  </head>
+  <body>
+    <div>サーバから　{{ . }} を受け取ったぞ</div>
+    <div>
+        {{ with "foobar" }}
+            ドットを　{{ . }} に変更しています（hoge -> foobar）
+        {{ else }}
+            エラー時はこっちですぞ。 {{ . }}
+        {{ end }}
+        <div>{{ . }} にもどった</div>
+    </div>
+  </body>
+</html>

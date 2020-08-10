@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>てすと</title>
+  </head>
+  <body>    
+    <div> ここは、ベース（インクルードの前）</div>
+    <div>ベース内でのドットの値 - [{{ . }}]</div>
+    <hr/>
+    {{ template "tmpl_part.html" . }} <!--  ここでtmpl_baseを読み込むと、無限に読み込み続けることができる（無意味）-->
+    <hr/>
+    <div> ここは、ベース（インクルードの後）</div>
+  </body>
+</html>

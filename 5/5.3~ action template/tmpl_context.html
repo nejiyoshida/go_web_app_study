@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>てすと</title>
+  </head>
+  <body>
+    <div>{{ . }}</div>
+    <!-- 文脈に応じていい感じにエスケープされる-->
+    <div><a href="/{{ . }}">Path</a></div>
+    <div><a href="/?q={{ . }}">Query</a></div>
+    <div><a onclick="f('{{ . }}')">Onclick</a></div>
+  </body>
+</html>
